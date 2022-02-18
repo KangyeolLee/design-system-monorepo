@@ -15,7 +15,7 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "types": ["react", "jest"],
     "noEmit": true
   },
