@@ -1,5 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react", "prettier"],
   "extends": [
     "standard",
     "standard-react",
@@ -9,13 +10,16 @@
     "plugin:@typescript-eslint/eslint-recommended"
   ],
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaVersion": "latest",
     "ecmaFeatures": {
       "legacyDecorators": true,
-      "jsx": true
+      "jsx": true,
+      "modules": true
     }
   },
   "settings": {
@@ -29,6 +33,7 @@
     "react/jsx-handler-names": 0,
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
-    "import/export": 0
+    "import/export": 0,
+    "react/react-in-jsx-scope": "off"
   }
 }
