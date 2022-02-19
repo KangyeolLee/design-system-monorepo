@@ -35,6 +35,10 @@
   },
   "dependencies": {
     "antd-ui": "file:packages\\antd-ui",
-    "material-ui": "file:packages\\material-ui"
+    "material-ui": "file:packages\\material-ui",
+    "my-app": "file:packages\\my-app"
+  },
+  "scripts": {
+    "start": "npx lerna run app-start --stream"
   }
 }

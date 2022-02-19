@@ -7,19 +7,18 @@
     "plugin:prettier/recommended",
     "prettier/standard",
     "prettier/react",
-    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "env": {
     "node": true,
     "browser": true
   },
   "parserOptions": {
+    "ecmaVersion": 12,
     "sourceType": "module",
-    "ecmaVersion": "latest",
     "ecmaFeatures": {
-      "legacyDecorators": true,
-      "jsx": true,
-      "modules": true
+      "jsx": true
     }
   },
   "settings": {
@@ -34,6 +33,12 @@
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
     "import/export": 0,
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
